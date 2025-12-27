@@ -161,7 +161,7 @@ window.addEventListener('scroll', () => {
 // ==================== Page Load Animation ====================
 window.addEventListener('load', () => {
     document.body.style.opacity = '0';
-    document.body.style.animation = 'fadeInUp 0.8s ease forwards';
+    document.body.style.animation = 'fadeInUp 1.2s ease forwards';
 });
 
 // ==================== Keyboard Navigation ====================
