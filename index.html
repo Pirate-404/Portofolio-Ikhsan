@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Mohammad Ikhsan Setiaji</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="navbar-container">
+            <!-- Logo -->
+            <div class="logo">
+                <img src="https://scontent-cgk2-1.xx.fbcdn.net/v/t39.30808-1/571304015_2246076035873479_3908537948105308489_n.jpg?stp=dst-jpg_s200x200_tt6&_nc_cat=103&ccb=1-7&_nc_sid=e99d92&_nc_ohc=tvEpbSPNNf4Q7kNvwET6vr3&_nc_oc=Adk1FDu5eHJtxwErBfRnD7MIU4LOegXcWqjqwhDlUyRYBsGFw45rus-Mdgk7QaVt_9ZW2_BbbKty7br6_tT2w6FJ&_nc_zt=24&_nc_ht=scontent-cgk2-1.xx&_nc_gid=bEPk1EGTVHzAGg8EkQ033Q&oh=00_AfmqRQQXfC12k9HfMIY-dyoYqTw_MKGa1FwZgVwTnaceBw&oe=6953F541" alt="Logo" class="logo-img">
+                <span class="logo-text">Mohammad Ikhsan Setiaji</span>
+            </div>
+
+            <!-- Hamburger Menu -->
+            <div class="hamburger" id="hamburger">
+                <span>Kolom 1</span>
+                <span>Kolom 2</span>
+                <span>Kolom 3</span>
+            </div>
+
+    <!-- Darkmode Toggle -->
+    <div class="darkmode-toggle">
+        <i class="fas fa-moon" id="darkModeIcon"></i>
+        <div onclick="toggleDarkMode()" class="toggle-switch" id="darkModeToggle"></div>
+    </div>
+
+            <!-- Navigation Links -->
+            <ul class="nav-menu" id="navMenu">
+                <li class="nav-item">
+                    <a href="#home" class="nav-link active">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#about" class="nav-link">About Me</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#experience" class="nav-link">Pengalaman</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#gallery" class="nav-link">Galeri</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <!-- Home Section -->
+        <section id="home" class="section hero">
+            <div class="container">
+                <div class="hero-content">
+                    <h1 class="hero-title">Selamat Datang</h1>
+                    <p class="hero-subtitle">Saya adalah developer yang passionate dengan skills di berbagai bidang</p>
+                    <button class="btn btn-primary" onclick="document.getElementById('about').scrollIntoView({behavior: 'smooth'})">Lihat Selengkapnya</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Me Section -->
+        <section id="about" class="section about-section">
+            <div class="container">
+                <h2 class="section-title">About Me</h2>
+                <div class="about-grid">
+                    <div class="about-box">
+                        <i class="fas fa-code"></i>
+                        <h3>Web Development</h3>
+                        <p>Spesialis dalam membuat website responsive dan interaktif menggunakan HTML, CSS, dan JavaScript modern.</p>
+                    </div>
+                    <div class="about-box">
+                        <i class="fas fa-mobile-alt"></i>
+                        <h3>Mobile Friendly</h3>
+                        <p>Semua project yang saya buat dirancang untuk responsif dan berfungsi optimal di berbagai device.</p>
+                    </div>
+                    <div class="about-box">
+                        <i class="fas fa-paint-brush"></i>
+                        <h3>Design Kreatif</h3>
+                        <p>Menggabungkan estetika modern dengan fungsionalitas tinggi untuk menciptakan user experience terbaik.</p>
+                    </div>
+                    <div class="about-box">
+                        <i class="fas fa-rocket"></i>
+                        <h3>Performa Tinggi</h3>
+                        <p>Fokus pada optimasi dan performa untuk memastikan website berjalan cepat dan efisien.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Experience Section -->
+        <section id="experience" class="section experience-section">
+            <div class="container">
+                <h2 class="section-title">Pengalaman</h2>
+                <div class="experience-timeline">
+                    <div class="experience-box">
+                        <div class="experience-header">
+                            <h3>Frontend Developer</h3>
+                            <span class="date">2023 - Sekarang</span>
+                        </div>
+                        <p class="experience-desc">Mengembangkan antarmuka web yang responsif dan interaktif untuk berbagai proyek klien.</p>
+                        <div class="skills">
+                            <span class="skill-tag">HTML</span>
+                            <span class="skill-tag">CSS</span>
+                            <span class="skill-tag">JavaScript</span>
+                        </div>
+                    </div>
+
+                    <div class="experience-box">
+                        <div class="experience-header">
+                            <h3>UI/UX Designer</h3>
+                            <span class="date">2022 - 2023</span>
+                        </div>
+                        <p class="experience-desc">Merancang user interface dan user experience untuk aplikasi web dan mobile.</p>
+                        <div class="skills">
+                            <span class="skill-tag">Figma</span>
+                            <span class="skill-tag">Adobe XD</span>
+                            <span class="skill-tag">Prototyping</span>
+                        </div>
+                    </div>
+
+                    <div class="experience-box">
+                        <div class="experience-header">
+                            <h3>Web Developer Intern</h3>
+                            <span class="date">2021 - 2022</span>
+                        </div>
+                        <p class="experience-desc">Belajar dan berkontribusi dalam pengembangan website dengan mentoring dari senior developer.</p>
+                        <div class="skills">
+                            <span class="skill-tag">HTML</span>
+                            <span class="skill-tag">CSS</span>
+                            <span class="skill-tag">Bootstrap</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Gallery Section -->
+        <section id="gallery" class="section gallery-section">
+            <div class="container">
+                <h2 class="section-title">Galeri Proyek</h2>
+                <div class="gallery-grid">
+                    <div class="gallery-box">
+                        <div class="gallery-img">
+                            <img src="https://via.placeholder.com/300x200?text=Proyek+1" alt="Proyek 1">
+                            <div class="overlay">
+                                <p>E-Commerce Website</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="gallery-box">
+                        <div class="gallery-img">
+                            <img src="https://via.placeholder.com/300x200?text=Proyek+2" alt="Proyek 2">
+                            <div class="overlay">
+                                <p>Portfolio Website</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="gallery-box">
+                        <div class="gallery-img">
+                            <img src="https://via.placeholder.com/300x200?text=Proyek+3" alt="Proyek 3">
+                            <div class="overlay">
+                                <p>Blog Platform</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="gallery-box">
+                        <div class="gallery-img">
+                            <img src="https://via.placeholder.com/300x200?text=Proyek+4" alt="Proyek 4">
+                            <div class="overlay">
+                                <p>Mobile App Landing</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <p>&copy; 2025 - @Mohammad Ikhsan Setiaji</p>
+            <div class="social-links">
+                <a href="#" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="#" target="_blank"><i class="fab fa-linkedin"></i></a>
+                <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
